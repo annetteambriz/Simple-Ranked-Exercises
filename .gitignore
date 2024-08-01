@@ -3,3 +3,23 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# intellij
+src/intellij*/*.iml
+src/intellij*/*.ipr
+src/intellij*/*.iws
+**/.cache
+/.settings
+*.iml
+.idea/*
+
+
+# sbt's target directories
+target/
+project/target
+project/**/target/
+
+test/files/target/
+test/target/
+build-sbt/
+local.sbt

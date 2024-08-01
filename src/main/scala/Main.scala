@@ -1,7 +1,7 @@
 import hackerRankExercises.easy.filterOnN.{indicesOfFruit, oddSum, removeOddPosition}
 import hackerRankExercises.medium.listReplication.fillList
 import hackerRankExercises.medium.Reverse.reverse
-import hackerRankExercises.easy.filterOnN
+import hackerRankExercises.easy.{filterOnN, myFavoriteNumbers, playingWithMaps}
 import hackerRankExercises.medium.{Reverse, listReplication, otherSuperDigit, subStringSearch, superDigit}
 import hackerRankExercises.test.Test
 
@@ -25,5 +25,12 @@ object Main {
 //    println(Test.numPlayers(3, Array(100, 50, 50, 25)))
 //    println("New case")
 //    println(Test.numPlayers(4, Array(2, 3, 3, 4, 5)))
+    val someNumbers: List[Int] = List(1, 99, 75, 21)
+    val someOtherNumbers: List[Option[Int]] = List(Some(110), Some(99), None, Some(75), Some(666), None)
+    val anyStuff: List[Any] = List(234, 445, 776, 232, 1, 99, 75, 21, "Roses are red", "Scala")
+
+    //println(myFavoriteNumbers.findMyFavoriteNumbers(someOtherNumbers))
+    println(myFavoriteNumbers.findMyFavoriteNumbersAndReturn(someOtherNumbers))
+    //playingWithMaps.mapIt(someNumbers)
   }
 }

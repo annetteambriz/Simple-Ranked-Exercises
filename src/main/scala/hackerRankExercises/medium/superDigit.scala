@@ -1,5 +1,23 @@
 package hackerRankExercises.medium
 
+
+/**
+ *
+ * We define super digit of an integer X using the following rules:
+ * If X has only 1 digit, then its super digit is X.
+ * Otherwise, the super digit of X is equal to the super digit of the digit-sum of X.
+ * Here, digit-sum of a number is defined as the sum of its digits.
+ * For example, super digit of  will be calculated as:
+ *
+ * super_digit(9875)  super_digit(9+8+7+5)
+ *                 = super_digit(29)
+ *                 = super_digit(2+9)
+ *                 = super_digit(11)
+ *                 = super_digit(1+1)
+ *                 = super_digit(2)
+ *                 = 2
+ */
+
 object superDigit {
   def find(num: Int): Int = {
     superDigitHelper(numAsList(num))
